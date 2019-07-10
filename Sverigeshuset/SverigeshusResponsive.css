@@ -1,0 +1,49 @@
+@media only screen and (min-width: 1000px){
+	.menu-folding{
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 720px){ //タブレット向けサイズ
+
+	body{
+		font-size: 15px;
+	}
+	
+	h1, #language{
+		text-align: center;
+		float: none;
+	}
+	
+	#language{
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	#language-folding{
+		display: none;
+	}
+	
+	.menus img{
+		width: 240px;
+		height: 216px;
+		object-fit: cover;
+	}
+}
+
+
+@media only screen and (max-width: 400px){
+
+	body{
+		font-size: 13px;
+	}
+	
+	
+	.menus img{
+		width: 180px;
+		height: 144px;
+		object-fit: cover;
+	}
+
+}

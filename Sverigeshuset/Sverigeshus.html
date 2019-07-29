@@ -16,7 +16,7 @@
 <header>
 	<h1>スバリエ・フース</h1>
 
-	<ul id= "language">
+	<ul id= "language"> <!--ハンバーガーメニューかボタンメニューにするべきか。jQuery導入でtoggle可能-->
 		<li class= "languages"><a href="#"><img src= "./images/Sweden.png">Svenska</a></li>
 		<li class= "languages"><a href="#"><img src= "./images/Finland.png">Suomi</a></li>
 		<li class= "languages"><a href="#"><img src= "./images/Norway.png">Norsk</a></li>
@@ -30,20 +30,24 @@
 <article>
 	<h2>MENY ～当店のメニュー～</h2>
 	<section class= "menus">
-		<h3>スウェーデン式ミートボール（ミニサラダ付） <small lang= "sv">Köttbullar</small> 各850円</h3>
+		<h3>スウェーデン式ミートボール（ミニサラダ付） <br class= "menu-folding">
+		<small lang= "sv">Köttbullar</small> 各850円</h3>
 			<div class= "foods_array">
 				<div class= "food_menus"><img src= "./Images/Main/kottbullar_i_gradsas.jpg" class= "foods_img"><p>クリームソース</p></div>
+					<br class= "menu-folding">
 				<div class= "food_menus"><img src= "./Images/Main/kottbullar_i_tomatsas.jpg" class= "foods_img"><p>トマトソース</p></div>
 					<br class= "menu-folding">
 				<div class= "food_menus"><img src= "./Images/Main/kottbullar-i-het-sas.jpg" class= "foods_img"><p>チリソース</p></div>
 			</div>
-			<p>★ミートボールパスタは+50円</p>
+			<p id= "plus_50yen">★ミートボールパスタは+50円</p>
 	</section>
 	
 	<section class= "menus">
-		<h3>スウェーデンのジャガイモ料理（ミニサラダ付） <small lang= "sv">Mat med potatis (med salad)</small></h3>
+		<h3>スウェーデンのジャガイモ料理（ミニサラダ付） <br class= "menu-folding">
+		<small lang= "sv">Måt med potatis (med salad)</small></h3>
 			<div class= "foods_array">
 				<div class= "food_menus"><img src= "./Images/Main/PyttIPanna.jpg"><p>ピッティパンナ 800円</p></div>
+					<br class= "menu-folding">
 				<div class= "food_menus"><img src= "./Images/Main/Hasselbackspotatis.jpg"><p>ハッセルバック・ポテト 800円</p></div>
 					<br class= "menu-folding">
 				<div class= "food_menus"><img src= "./Images/Main/janssonsfrestelse.jpg"><p>"ヤンソンの誘惑" 900円</p><p class= "smaller_p">(ジャガイモとアンチョビのグラタン風)</p></div>
@@ -65,7 +69,7 @@
 	
 	<section class= "menus">
 		<img src= "./images/Kaffe.jpg" id="coffee">
-		<h3>飲み物 <small lang= "sv">Ska vi fika?</small></h3>
+		<h3>飲み物 <small lang= "sv">Skå vi fika?</small></h3>
 			<div class= "drink_menus">コーヒー（ホット/アイス） 300円</div>
 			<div class= "drink_menus">カフェインレスコーヒー（ホット/アイス） 300円</div>
 			<div class= "drink_menus">カフェオレ（ホット/アイス） 350円 <u>※カフェインレス可</u></div>
@@ -80,17 +84,18 @@
 	<section id= "party" class="menus">
 		<h3>★PARTY PLAN★</h3>
 		<img src= "./images/Partymenu image1.jpg">
-		<h4>北欧ビュッフェ「スモーガスボード」パーティーの予約承ります。</br>
-		2500円/人。ソフトドリンク飲み放題3000円/人、全飲み放題4000円/人</h4>
+		<p>北欧ビュッフェ「スモーガスボード」パーティーの予約承ります。
+		2500円/人。ソフトドリンク飲み放題3000円/人、全飲み放題4000円/人</p>
 	</section>
 	
 	<form method= "get" action="poll.php" id= "poll">
-	<h2>第XX回ミートボール人気投票選手権<small lang= "sv">Vilka köttbullar älskar ni? </small</h2>
-		<label><input type= "radio">クリームソース<small lang= "sv">Gradsas</small></label>
-		<label><input type= "radio">トマトソース<small lang= "sv">Tomatsas</small></label>
-		<label><input type= "radio">チリソース<small lang= "sv">Chilisas</small></label>
-</form>
+		<h2>第XX回ミートボール人気投票選手権</br>
+		<small lang= "sv">Vilka köttbullar älskar ni? </small></h2>
 	
+		<label><input type= "radio">クリームソース<small lang= "sv">Gradsås</small></label></br>
+		<label><input type= "radio">トマトソース<small lang= "sv">Tomatsås</small></label></br>
+		<label><input type= "radio">チリソース<small lang= "sv">Chilisås</small></label></br>
+	</form>
 </article>
 
 </div> <!--wrapper ends here-->

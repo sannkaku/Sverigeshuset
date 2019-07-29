@@ -112,7 +112,7 @@ footer{
 }
 
 #copyright{
-	margin-top: 14px;
-	margin-left: 10px;
-	clear: right;
+	margin-top: 30px;
+    	margin-right: 12px;
+	float: right;
 }

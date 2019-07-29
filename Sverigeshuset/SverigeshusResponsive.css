@@ -1,18 +1,16 @@
 @media only screen and (min-width: 1018px){
-	.menu-folding{
-		display: none;
-	}
-	
+	.menu-folding,
 	#language-folding{
-		display: none;	
+		display: none;
 	}
 }
 
 
-@media only screen and (max-width: 720px){ /*タブレット向けサイズ*/
+@media only screen and (max-width: 768px){ /*タブレット向けサイズ*/
 
-	body{
-		font-size: 15px;
+	
+	.menu-folding{
+		display: block;	
 	}
 	
 	h1, #language{
@@ -25,14 +23,23 @@
 		margin: 0 auto;
 	}
 	
-	#language-folding{
-		display: none;
-	}
+	
 	
 	.menus img{
 		width: 240px;
 		height: 216px;
 		object-fit: cover;
+	}
+	
+	
+	
+	h3{
+		font-size: 18px;	
+	}
+	
+	#party_img{
+		width: 88%;
+		height: auto;
 	}
 }
 
@@ -43,6 +50,9 @@
 		font-size: 13px;
 	}
 	
+	#language-folding{
+		display: block;
+	}
 	
 	.menus img{
 		width: 180px;

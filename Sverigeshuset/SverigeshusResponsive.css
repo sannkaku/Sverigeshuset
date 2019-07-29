@@ -2,6 +2,10 @@
 	.menu-folding{
 		display: none;
 	}
+	
+	#language-folding{
+		display: none;	
+	}
 }
 
 

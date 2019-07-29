@@ -10,9 +10,8 @@ body{
 }
 
 h1{
-	width: 100%;
-	margin-top: 0px;
-	margin-bottom: 10px;
+	width: 50%;
+	margin: 0px;
 	color: #ffff1a;
 	text-align: left;
 }
@@ -30,7 +29,7 @@ a{
 }
 
 #language{
-	padding-right: 20px;
+	padding-right: 0px;
 	float: right;
 }
 
@@ -60,6 +59,7 @@ article{
 
 h3{
 	margin-top: 36px;
+	font-size: 18px;
 }
 
 .menus{
@@ -99,6 +99,7 @@ h3{
 #poll{
 	color: purple;
 	text-align: center;
+	background-color: #FFFFCC;
 }
 
 
@@ -106,6 +107,8 @@ footer{
 	height: 80px;
 	margin-top: 30px;
 	border-top: solid 1.5px #ffff3d;
+	background-color: #005ce6;
+	color: #ffff1a;
 }
 
 #copyright{

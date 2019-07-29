@@ -24,19 +24,17 @@
 	}
 	
 	
-	
-	.menus img{
+	.food_menus{
 		width: 240px;
 		height: 216px;
-		object-fit: cover;
 	}
-	
 	
 	
 	h3{
 		font-size: 18px;	
 	}
 	
+	#coffee,
 	#party_img{
 		width: 88%;
 		height: auto;
@@ -57,6 +55,18 @@
 	.menus img{
 		width: 180px;
 		height: 144px;
+		object-fit: cover;
+	}
+	
+	.food_menus{
+		width: 88%;
+		height: auto;
+		object-fit: cover;	
+	}
+	
+	.confectioneries{
+		width: 88%;
+		height: auto;
 		object-fit: cover;
 	}
 

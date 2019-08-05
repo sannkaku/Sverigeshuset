@@ -46,9 +46,10 @@ a{
 }
 
 h2{
-	text-align: center;
 	margin-top: 30px;
 	margin-bottom: 16px;
+	font-size: 34px;
+	text-align: center;
 }
 
 article{
@@ -59,10 +60,12 @@ article{
 
 h3{
 	margin-top: 36px;
+	padding-top: 26px;
 	font-size: 18px;
 }
 
 .menus{
+	margin-top: 40px;
 	text-align: center;
 }
 
@@ -73,7 +76,7 @@ h3{
 }
 
 .foods_array{
-	width: 80%;
+	width: 1050px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 30px;
@@ -86,13 +89,37 @@ h3{
 	font-size: 20px;
 }
 
-.smaller_p{
+.confectioneries{
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	display: flex;
+}
+
+.confectioneries p{
 	font-size: 14px;
 }
 
+.smaller_p{
+	color: #b30000;
+	font-size: 14px;
+}
+
+#drink{
+	margin-top: 60px;
+}
+
+#coffee{
+    width: 300px;
+    height: auto;
+	margin-bottom: 26px;
+}
+
+
 #party img{
-	width: 480px;
-	height: 320px;
+	width: 360px;
+	height: auto;
 	object-fit: cover;
 }
 
@@ -105,7 +132,7 @@ h3{
 
 footer{
 	height: 80px;
-	margin-top: 30px;
+	padding-top: 30px;
 	border-top: solid 1.5px #ffff3d;
 	background-color: #005ce6;
 	color: #ffff1a;
@@ -113,6 +140,6 @@ footer{
 
 #copyright{
 	margin-top: 30px;
-    	margin-right: 12px;
+    margin-right: 12px;
 	float: right;
 }

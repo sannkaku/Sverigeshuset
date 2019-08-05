@@ -25,11 +25,16 @@
 		<li class= "languages"><a href="#"><img src= "./images/United-Kingdom.png">English</a></li>
 		<li class= "languages"><a href="#"><img src= "./images/Germany.png">Deutsch</a></li>
 	</ul>
+	
+	<div id= "language_responsive">
+		<!--LANGUAGE のメニューを埋め込む-->
+	<div>
+	
 </header>
 
 <article>
 	<h2>MENY ～当店のメニュー～</h2>
-	<section class= "menus">
+	<section id= "meatball" class= "menus">
 		<h3>スウェーデン式ミートボール（ミニサラダ付） <br class= "menu-folding">
 		<small lang= "sv">Köttbullar</small> 各850円</h3>
 			<div class= "foods_array">
@@ -42,7 +47,7 @@
 			<p id= "plus_50yen">★ミートボールパスタは+50円</p>
 	</section>
 	
-	<section class= "menus">
+	<section id="potato" class= "menus">
 		<h3>スウェーデンのジャガイモ料理（ミニサラダ付） <br class= "menu-folding">
 		<small lang= "sv">Måt med potatis (med salad)</small></h3>
 			<div class= "foods_array">
@@ -54,22 +59,23 @@
 			</div>
 	</section>
 	
-	<section class= "menus">
+	<section id= "confectionery" class= "menus">
 		<h3>スウェーデンのお菓子 <small>Svensk godis</small></h3>
-			<div class= "foods_array">
-				<div class= "confectioneries"><img src= "./Images/Dessert/kanelbullar.jpg"><p>シナモンロール 250円</p></div>
-				<div class= "confectioneries"><img src= "./Images/Dessert/Semla.jpg"><p>セムラ 300円</p></div>
+			<div class= "confectioneries">
+				<div class= "food_menus"><img src= "./Images/Dessert/kanelbullar.jpg"><p>シナモンロール 250円</p></div>
+				<div class= "food_menus"><img src= "./Images/Dessert/Semla.jpg"><p>セムラ 300円</p></div>
 			</div>
 				<br class= "menu-folding">
-			<div class= "foods_array">
-				<div class= "confectioneries"><img src= "./Images/Dessert/Baren Pannkaka.jpg"><p>ベリーのパンケーキ 750円</p></div>
-				<div class= "confectioneries"><img src= "./Images/Dessert/Alandspannkaka.jpg"><p class= "smaller_p">オーランド島のパンケーキ 750円</p><p class= "smaller_p">（※数量限定 5ヶ/日）</p></div>
+			<div class= "confectioneries">
+				<div class= "food_menus"><img src= "./Images/Dessert/Baren Pannkaka.jpg"><p>ベリーのパンケーキ 750円</p></div>
+				<div class= "food_menus"><img src= "./Images/Dessert/Alandspannkaka.jpg"><p>オーランド島パンケーキ 750円(※)</p></div>
 			</div>
+			<p class= "smaller_p">（※数量限定 5ヶ/日）</p>
 	</section>
 	
-	<section class= "menus">
-		<img src= "./images/Kaffe.jpg" id="coffee">
+	<section id= "drink" class= "menus">
 		<h3>飲み物 <small lang= "sv">Skå vi fika?</small></h3>
+		<img src= "./images/Kaffe.jpg" id="coffee">
 			<div class= "drink_menus">コーヒー（ホット/アイス） 300円</div>
 			<div class= "drink_menus">カフェインレスコーヒー（ホット/アイス） 300円</div>
 			<div class= "drink_menus">カフェオレ（ホット/アイス） 350円 <u>※カフェインレス可</u></div>
@@ -84,8 +90,8 @@
 	<section id= "party" class="menus">
 		<h3>★PARTY PLAN★</h3>
 		<img src= "./images/Partymenu image1.jpg">
-		<p>北欧ビュッフェ「スモーガスボード」パーティーの予約承ります。
-		2500円/人。ソフトドリンク飲み放題3000円/人、全飲み放題4000円/人</p>
+		<p>北欧ビュッフェ「スモーガスボード」パーティーの予約承ります。</p>
+		<p>2500円/人。ソフトドリンク飲み放題3000円/人、全飲み放題4000円/人</p>
 	</section>
 	
 	<form method= "get" action="poll.php" id= "poll">
@@ -95,6 +101,7 @@
 		<label><input type= "radio">クリームソース<small lang= "sv">Gradsås</small></label></br>
 		<label><input type= "radio">トマトソース<small lang= "sv">Tomatsås</small></label></br>
 		<label><input type= "radio">チリソース<small lang= "sv">Chilisås</small></label></br>
+		<label><input type= "submit" name= "submit" value= "投票！">
 	</form>
 </article>
 

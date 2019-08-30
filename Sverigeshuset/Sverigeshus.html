@@ -7,7 +7,7 @@
 	<link rel= "stylesheet" href= "Sverigeshus.css">
 	<link rel= "stylesheet" href= "SverigeshusResponsive.css">
 	<script src= "Sverigeshus.js"></script>
-	<title>MENY: Sverigeshuset</title>
+	<title>MENY: Sverigeshus</title>
 </head>
 
 <body>
@@ -25,12 +25,19 @@
 		<li class= "languages"><a href="#"><img src= "./images/United-Kingdom.png">English</a></li>
 		<li class= "languages"><a href="#"><img src= "./images/Germany.png">Deutsch</a></li>
 	</ul>
-	
-	<div id= "language_responsive">
-		<!--LANGUAGE のメニューを埋め込む-->
-	<div>
-	
 </header>
+
+<div id= "language_responsive">
+	<ul>
+	<span>LANGUAGES:</span>
+		<li class= "languages_responsive"><a href="#"><img src= "./images/Sweden.png">Se</a></li>
+		<li class= "languages_responsive"><a href="#"><img src= "./images/Finland.png">Fi</a></li>
+		<li class= "languages_responsive"><a href="#"><img src= "./images/Norway.png">No</a></li>
+		<li class= "languages_responsive"><a href="#"><img src= "./images/Denmark.png">Dk</a></li>
+		<li class= "languages_responsive"><a href="#"><img src= "./images/United-Kingdom.png">En</a></li>
+		<li class= "languages_responsive"><a href="#"><img src= "./images/Germany.png">De</a></li>
+	</ul>
+</div>
 
 <article>
 	<h2>MENY ～当店のメニュー～</h2>
@@ -39,9 +46,9 @@
 		<small lang= "sv">Köttbullar</small> 各850円</h3>
 			<div class= "foods_array">
 				<div class= "food_menus"><img src= "./Images/Main/kottbullar_i_gradsas.jpg" class= "foods_img"><p>クリームソース</p></div>
-					<br class= "menu-folding">
+					</br class= "menu-folding">
 				<div class= "food_menus"><img src= "./Images/Main/kottbullar_i_tomatsas.jpg" class= "foods_img"><p>トマトソース</p></div>
-					<br class= "menu-folding">
+					</br class= "menu-folding">
 				<div class= "food_menus"><img src= "./Images/Main/kottbullar-i-het-sas.jpg" class= "foods_img"><p>チリソース</p></div>
 			</div>
 			<p id= "plus_50yen">★ミートボールパスタは+50円</p>
@@ -52,9 +59,9 @@
 		<small lang= "sv">Måt med potatis (med salad)</small></h3>
 			<div class= "foods_array">
 				<div class= "food_menus"><img src= "./Images/Main/PyttIPanna.jpg"><p>ピッティパンナ 800円</p></div>
-					<br class= "menu-folding">
+					</br class= "menu-folding">
 				<div class= "food_menus"><img src= "./Images/Main/Hasselbackspotatis.jpg"><p>ハッセルバック・ポテト 800円</p></div>
-					<br class= "menu-folding">
+					</br class= "menu-folding">
 				<div class= "food_menus"><img src= "./Images/Main/janssonsfrestelse.jpg"><p>"ヤンソンの誘惑" 900円</p><p class= "smaller_p">(ジャガイモとアンチョビのグラタン風)</p></div>
 			</div>
 	</section>
@@ -63,9 +70,9 @@
 		<h3>スウェーデンのお菓子 <small>Svensk godis</small></h3>
 			<div class= "confectioneries">
 				<div class= "food_menus"><img src= "./Images/Dessert/kanelbullar.jpg"><p>シナモンロール 250円</p></div>
-				<div class= "food_menus"><img src= "./Images/Dessert/Semla.jpg"><p>セムラ 300円</p></div>
+				<div class= "food_menus"><img src= "./Images/Dessert/Semla.jpg"><p>セムラ 350円</p></div>
 			</div>
-				<br class= "menu-folding">
+				</br class= "menu-folding">
 			<div class= "confectioneries">
 				<div class= "food_menus"><img src= "./Images/Dessert/Baren Pannkaka.jpg"><p>ベリーのパンケーキ 750円</p></div>
 				<div class= "food_menus"><img src= "./Images/Dessert/Alandspannkaka.jpg"><p>オーランド島パンケーキ 750円(※)</p></div>
@@ -94,15 +101,16 @@
 		<p>2500円/人。ソフトドリンク飲み放題3000円/人、全飲み放題4000円/人</p>
 	</section>
 	
-	<form method= "get" action="poll.php" id= "poll">
+	<section id= "voting">
 		<h2>第XX回ミートボール人気投票選手権</br>
 		<small lang= "sv">Vilka köttbullar älskar ni? </small></h2>
-	
-		<label><input type= "radio">クリームソース<small lang= "sv">Gradsås</small></label></br>
-		<label><input type= "radio">トマトソース<small lang= "sv">Tomatsås</small></label></br>
-		<label><input type= "radio">チリソース<small lang= "sv">Chilisås</small></label></br>
-		<label><input type= "submit" name= "submit" value= "投票！">
-	</form>
+		<form method= "get" action="poll.php" id= "poll">
+			<label for= "radio1"><input type= "radio" name= "radio_poll" value= "cream">クリームソース<small lang= "sv">Grädsås</small></label></br>
+			<label for= "radio2"><input type= "radio" name= "radio_poll" value= "tomato">トマトソース<small lang= "sv">Tomatsås</small></label></br>
+			<label for= "radio3"><input type= "radio" name= "radio_poll" value= "chili">チリソース<small lang= "sv">Chilisås</small></label></br>
+			<label><input type= "submit" name= "submit" value= "投票！">
+		</form>
+	</section>
 </article>
 
 </div> <!--wrapper ends here-->

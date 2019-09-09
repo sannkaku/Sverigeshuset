@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--HTML,CSSのみでの作成を目指した-->
+<html lang= "ja">
+<head>
+	<meta charset= "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel= "stylesheet" href= "Sverigeshus.css">
+	<link rel= "stylesheet" href= "SverigeshusResponsive.css">
+	<script src= "Sverigeshus.js"></script>
+	<title>MENY: Sverigeshus</title>
+</head>
+
+<body>
+
+<div id= "wrapper">
+<header>
+	<img src= "./images/headerflag.jpg" id= "flag_left">
+	<h1>スバリエ・フース</h1>
+</header>
+
+<div id= "language">
+	<ul>
+		<li class= "languages"><a href="./Sverigeshus(Swe).html"><img src= "./images/Sweden.png">Svenska</a></li>
+		<li class= "languages"><a href="#"><img src= "./images/Finland.png">Suomi</a></li>
+		<li class= "languages"><a href="#"><img src= "./images/Norway.png">Norsk</a></li>
+		<li class= "languages"><a href="#"><img src= "./images/Denmark.png">Dansk</a></li>
+		<li class= "languages"><a href="./Sverigeshus(Eng).html"><img src= "./images/United-Kingdom.png">English</a></li>
+		<li class= "languages"><a href="./Sverigeshus(Ger).html"><img src= "./images/Germany.png">Deutsch</a></li>
+	</ul>
+</div>
+
+<div id= "language_responsive">
+	<ul>
+	<span>LANGUAGES:</span>
+		<li class= "languages_responsive"><a href="./Sverigeshus(Swe).html"><img src= "./images/Sweden.png">Se</a></li>
+		<li class= "languages_responsive"><a href="#"><img src= "./images/Finland.png">Fi</a></li>
+		<li class= "languages_responsive"><a href="#"><img src= "./images/Norway.png">No</a></li>
+		<li class= "languages_responsive"><a href="#"><img src= "./images/Denmark.png">Dk</a></li>
+		<li class= "languages_responsive"><a href="./Sverigeshus(Eng).html"><img src= "./images/United-Kingdom.png">En</a></li>
+		<li class= "languages_responsive"><a href="./Sverigeshus(Ger).html"><img src= "./images/Germany.png">De</a></li>
+	</ul>
+</div>
+
+<article>
+	<h2>MENY ～当店のメニュー～</h2>
+	<section id= "meatball" class= "menus">
+		<h3>スウェーデン式ミートボール（ミニサラダとパン付） <br class= "menu-folding">
+		<small lang= "sv">Köttbullar</small> 各850円</h3>
+		<div>
+			<div class= "foods_array">
+				<div class= "food_menus"><img src= "./Images/Main/kottbullar_i_gradsas.jpg" class= "foods_img"><p>クリームソース</p></div>
+					</br class= "menu-folding">
+				<div class= "food_menus"><img src= "./Images/Main/kottbullar_i_tomatsas.jpg" class= "foods_img"><p>トマトソース</p></div>
+					</br class= "menu-folding">
+				<div class= "food_menus"><img src= "./Images/Main/kottbullar-i-het-sas.jpg" class= "foods_img"><p>チリソース</p></div>
+			</div>
+			<p id= "plus_50yen">★ミートボールパスタは+50円</p>
+		</div>
+	</section>
+	
+	<section id="potato" class= "menus">
+		<h3>スウェーデンのジャガイモ料理（ミニサラダとパン付） <br class= "menu-folding">
+		<small lang= "sv">Mat med potatis</small></h3>
+			<div class= "foods_array">
+				<div class= "food_menus"><img src= "./Images/Main/PyttIPanna.jpg"><p>ピッティパンナ 800円</p></div>
+					</br class= "menu-folding">
+				<div class= "food_menus"><img src= "./Images/Main/Hasselbackspotatis.jpg"><p>ハッセルバック・ポテト 800円</p></div>
+					</br class= "menu-folding">
+				<div class= "food_menus"><img src= "./Images/Main/janssonsfrestelse.jpg"><p>"ヤンソンの誘惑" 900円</p><p class= "smaller_p">(ジャガイモとアンチョビのグラタン風)</p></div>
+			</div>
+	</section>
+	
+	<section id= "confectionery" class= "menus">
+		<h3>スウェーデンのお菓子 <small>Svensk godis</small></h3>
+			<div class= "confectioneries">
+				<div class= "food_menus"><img src= "./Images/Dessert/kanelbullar.jpg"><p>シナモンロール 250円</p></div>
+				<div class= "food_menus"><img src= "./Images/Dessert/Semla.jpg"><p>セムラ 350円</p></div>
+			</div>
+				</br class= "menu-folding">
+			<div class= "confectioneries">
+				<div class= "food_menus"><img src= "./Images/Dessert/Baren Pannkaka.jpg"><p>ベリーのパンケーキ 750円</p></div>
+				<div class= "food_menus"><img src= "./Images/Dessert/Alandspannkaka.jpg"><p>オーランド島パンケーキ 750円(※)</p></div>
+			</div>
+			<p class= "smaller_p">（※数量限定 5ヶ/日）</p>
+	</section>
+	
+	<section id= "drink" class= "menus">
+		<h3>飲み物 <small lang= "sv">"Skå vi fika?"</small></h3>
+		<img src= "./images/Kaffe.jpg" id="coffee">
+			<div class= "drink_menus">コーヒー（ホット/アイス） 300円</div>
+			<div class= "drink_menus">カフェインレスコーヒー（ホット/アイス） 300円</div>
+			<div class= "drink_menus">カフェオレ（ホット/アイス） 350円 <u>※カフェインレス可</u></div>
+			<div class= "drink_menus">エスプレッソ（シングル） 250円</div>
+			<div class= "drink_menus">エスプレッソ（ダブル） 350円</div>
+			<div class= "drink_menus">紅茶（ホット/アイス） 300円</div>
+			<div class= "drink_menus">ハーブティー各種 カモミール・ローズヒップ・ペパーミント 300円</div>
+			<div class= "drink_menus">ジュース各種 リンゴ・オレンジ・ブルーベリー・トマト 300円</div>
+			<div class= "drink_menus">スウェーデンのクラフトビール各種（ボトル） 700円～</div>
+	</section>
+	
+	<section id= "party" class="menus">
+		<h3>★PARTY PLAN★</h3>
+		<img src= "./images/Partymenu image1.jpg">
+		<p>北欧ビュッフェ「スモーガスボード」パーティーの予約承ります。</p>
+		<p>2500円/人。ソフトドリンク飲み放題3000円/人、全飲み放題4000円/人</p>
+	</section>
+	
+	<section id= "voting">
+		<h2>第XX回ミートボール人気投票選手権</br>
+		<small lang= "sv">Vilka köttbullar älskar ni? </small></h2>
+		<form method= "get" action="poll.php" id= "poll">
+			<label for= "radio1"><input type= "radio" name= "radio_poll" value= "cream">クリームソース<small lang= "sv">Grädsås</small></label></br>
+			<label for= "radio2"><input type= "radio" name= "radio_poll" value= "tomato">トマトソース<small lang= "sv">Tomatsås</small></label></br>
+			<label for= "radio3"><input type= "radio" name= "radio_poll" value= "chili">チリソース<small lang= "sv">Chilisås</small></label></br>
+			<label><input type= "submit" name= "submit" value= "投票！">
+		</form>
+	</section>
+</article>
+
+</div> <!--wrapper ends here-->
+
+<footer>
+	<div id= "copyright">
+		<small>&copy;Sverigeshus 2020<small>
+	</div>
+</footer>
+
+</body>
+</html>

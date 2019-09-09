@@ -8,14 +8,13 @@
 	<link rel= "stylesheet" href= "SverigeshusResponsive.css">
 	<script src= "Sverigeshus.js"></script>
 	<title>POLL: Sverigeshus</title>
-</head>
+<?php
+	$poll = $_GET['radio_poll'];
+?>
 
+</head>
 <body>
-<p>
-	<?php
-		$poll = $_GET['radio_poll']
-		echo ("${poll}‚É“Š•[‚µ‚Ü‚µ‚½I“Š•[‚ ‚è‚ª‚Æ‚¤‚²‚´‚¢‚Ü‚·B"); 
-	?>
-</p>
+<p> <?php echo ("You voted for ${poll}"); ?></p>
+<p>	<?php echo ("${poll}ã«æŠ•ç¥¨ã—ã¾ã—ãŸ"); ?></p>
 </body>
 </html>

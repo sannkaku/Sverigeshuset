@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--HTML,CSS�݂̂ł̍쐬��ڎw����-->
+<!--HTML,CSSのみでの作成を目指した-->
 <html lang= "ja">
 <head>
 	<meta charset= "UTF-8">
@@ -11,10 +11,10 @@
 <?php
 	$poll = $_GET['radio_poll'];
 ?>
-
 </head>
+	
 <body>
-<p> <?php echo ("You voted for ${poll}"); ?></p>
-<p>	<?php echo ("${poll}に投票しました"); ?></p>
+<p><?php echo ("You voted for ${poll}"); ?></p>
+<p><?php echo ("${poll}に投票しました！"); ?></p>
 </body>
 </html>
